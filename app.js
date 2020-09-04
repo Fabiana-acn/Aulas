@@ -4,6 +4,9 @@ import { podcastRouter } from './routes/podcastRouter.js';
 
 import { db } from './models/index.js';
 
+//utilizando dotenv
+//require('dotenv').config()
+
 (async () => {
   try {
     await db.mongoose.connect(db.url, {
